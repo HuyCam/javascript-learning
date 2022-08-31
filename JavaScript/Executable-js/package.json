@@ -1,0 +1,16 @@
+{
+  "name": "executable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "tran": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-window": "printf '%s\\n' 'ECHO OFF' 'node index.js' '::END' > windowapp.bat",
+    "build-shell": "printf '%s\\n' '#! /bin/bash' 'node index.js' > shellapp.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
