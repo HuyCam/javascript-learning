@@ -3,4 +3,4 @@ const someFunction = () => {
     return 'End someFunction';
 }
 
-exports.someFunction = someFunction;
+ export default someFunction;

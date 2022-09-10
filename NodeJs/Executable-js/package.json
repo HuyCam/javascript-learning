@@ -6,11 +6,17 @@
   "bin": {
     "tran": "./index.js"
   },
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node index.js",
     "build-window": "printf '%s\\n' 'ECHO OFF' 'node index.js' '::END' > windowapp.bat",
     "build-shell": "printf '%s\\n' '#! /bin/bash' 'node index.js' > shellapp.sh"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "conf": "^10.2.0"
+  }
 }
